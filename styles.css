@@ -4,6 +4,7 @@ body{
 
 .navbar{
     box-shadow: 4px 2px 5px gray;
+    position: sticky;
 }
 
 .DSC{
@@ -22,9 +23,19 @@ body{
     text-align: center;
 }
 
-.heading-header{
+.top-conatiner{
+    height: 120%;
+}
+
+.top-image{
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.heading-title{
     color: #4286F4;
-    font-size: 3em;
+    font-size: 4em;
+    margin: 1.2em;
 }
 
 .details{
@@ -32,25 +43,68 @@ body{
     text-align: left;
 }
 
-.tracks{
+.tracks-container{
+    margin: 1.2em;
+}
+
+.tracks-title{
     font-weight: bold;
 }
 
 .tracks-list{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     padding: 1em;
 }
 
 .track-item{
-    display: flex;
+    /* display: flex; */
     border: dashed gray 4px;
     border-radius: 16px;
     padding: 1em;
+    margin: 0.5em;
     min-width: 50%;
+    transition: all .1s ease-in-out;
+}
+
+.track-item:hover{
+    transform: scale(1.05);
 }
 
 .track-heading{
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.track-1{
+    color: #EA4335;
+}
+
+.track-2{
+    color: #4286F4;
+}
+
+.track-3{
+    color: #34A853;
+}
+
+@media screen and (max-width: 600px){
+    .DSC{
+        font-size: 1em; 
+    }
+
+    .heading-title{
+        font-size: 2em;
+    }
+
+    .details{
+        font-size: 1em;
+    }
+
+    .track-heading{
+        font-size: 1.5em;
+    }
 }
