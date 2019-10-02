@@ -1,0 +1,56 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    box-shadow: 4px 2px 5px gray;
+}
+
+.DSC{
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: middle;
+}
+
+.DSC-logo{
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+.container{
+    text-align: center;
+}
+
+.heading-header{
+    color: #4286F4;
+    font-size: 3em;
+}
+
+.details{
+    font-size: 2em;
+    text-align: left;
+}
+
+.tracks{
+    font-weight: bold;
+}
+
+.tracks-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.track-item{
+    display: flex;
+    border: dashed gray 4px;
+    border-radius: 16px;
+    padding: 1em;
+    min-width: 50%;
+}
+
+.track-heading{
+    font-size: 1.5em;
+}
